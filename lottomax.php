@@ -65,6 +65,9 @@ for ($i=0 ; $i<7; $i++){
            break;
            case 6;
                 $Tmatch['m6'] = $Tmatch['m6'] +1;
+           break;
+           case 7;
+                $Tmatch['m7'] = $Tmatch['m7'] +1;
    }
 
    switch ($match1) {
@@ -94,6 +97,10 @@ for ($i=0 ; $i<7; $i++){
            break;
            case 6;
                 $Tmatch1['m6'] = $Tmatch1['m6'] +1;
+           break;
+           case 6;
+                $Tmatch1['m7'] = $Tmatch1['m7'] +1;
+
 
    }
 

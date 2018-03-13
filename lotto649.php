@@ -1,31 +1,37 @@
-<html>
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotto-649</title>
+</head>
+<body>
+  <?php
 ini_set('max_execution_time', 0);
-$Tmatch = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'m7'=>0,'total'=>'0'];
-$Tmatch1 = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'m7'=>0,'total'=>'0'];
+$Tmatch = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'total'=>'0'];
+$Tmatch1 = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'total'=>'0'];
 
 for ($i = 1 ; $i<50 ; $i++) {
 $arr49[] = $i;
 }
 
-$arr2 = [3,8,12,28,33,42,46];
+$arr2 = [3,8,12,33,42,46];
 $totalRun = 0;
 for ($t=0 ; $t<1500000; $t++){
 $totalRun = $t + 1;
-$win649key = array_rand($arr49,7);
-$win649key1 = array_rand($arr49,7);
+$win649key = array_rand($arr49,6);
+$win649key1 = array_rand($arr49,6);
 
-for ($i=0 ; $i<7 ; $i++){
+for ($i=0 ; $i<6 ; $i++){
     $arr1[] = $arr49[$win649key[$i]];
 }
-for ($i=0 ; $i<7 ; $i++){
+for ($i=0 ; $i<6 ; $i++){
     $arr3[] = $arr49[$win649key1[$i]];
 }
 
 $match = 0;
 $match1 = 0;
-for ($i=0 ; $i<7; $i++){
-    for ($j=0; $j<7;$j++){
+for ($i=0 ; $i<6; $i++){
+    for ($j=0; $j<6;$j++){
 
       if ($arr1[$i] == $arr3[$j]){
      $match1 = $match1 +1;
@@ -114,7 +120,6 @@ echo '<tr>';
   echo '<td width="10%">'.'4'.'</td>';
   echo '<td width="10%">'.'5'.'</td>';
   echo '<td width="10%">'.'6'.'</td>';
-  echo '<td width="10%">'.'7'.'</td>';
   echo '<td width="10%">'.'total'.'</td>';
 echo '</tr>';
 echo '<tr>';
@@ -125,7 +130,6 @@ echo '<tr>';
   echo '<td width="10%">'.$Tmatch['m4'].'</td>';
   echo '<td width="10%">'.$Tmatch['m5'].'</td>';
   echo '<td width="10%">'.$Tmatch['m6'].'</td>';
-  echo '<td width="10%">'.$Tmatch['m7'].'</td>';
   echo '<td width="10%">'.$Tmatch['total'].'</td>';
 echo '</tr>';
 echo '<tr>';
@@ -136,10 +140,11 @@ echo '<tr>';
   echo '<td width="10%">'.$Tmatch1['m4'].'</td>';
   echo '<td width="10%">'.$Tmatch1['m5'].'</td>';
   echo '<td width="10%">'.$Tmatch1['m6'].'</td>';
-  echo '<td width="10%">'.$Tmatch1['m7'].'</td>';
   echo '<td width="10%">'.$Tmatch1['total'].'</td>';
 echo '</tr>';
 echo '</table>';
-?>
-
+?>  
+    
+    
+</body>
 </html>
