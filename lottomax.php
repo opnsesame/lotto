@@ -9,7 +9,7 @@ $arr49[] = $i;
 
 $arr2 = [3,8,12,28,33,42,46];
 $totalRun = 0;
-for ($t=0 ; $t<1500000; $t++){
+for ($t=0 ; $t<10000000; $t++){
 $totalRun = $t + 1;
 $win649key = array_rand($arr49,7);
 $win649key1 = array_rand($arr49,7);
