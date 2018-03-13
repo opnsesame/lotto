@@ -61,9 +61,9 @@ for ($i=0 ; $i<7; $i++){
                 $Tmatch['m6'] = $Tmatch['m6'] +1;
 
            break;
-           case 7;
+ //          case 7;
 
-           echo '7匹配的有'.$Tmatch['m7'];
+  //         echo '7匹配的有'.$Tmatch['m7'];
    }
 
 $Tmatch['total'] = $totalRun;
