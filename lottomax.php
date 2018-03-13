@@ -2,8 +2,6 @@
 ini_set('max_execution_time', 0);
 $Tmatch = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'m7'=>0,'total'=>'0'];
 $Tmatch1 = ['m0'=>0,'m1'=>0,'m2'=>0,'m3'=>0,'m4'=>0,'m5'=>0,'m6'=>0,'m7'=>0,'total'=>'0'];
-//$totalMatch = [0,0,0,0,0,0,0,0];
-//$totalMatch1 = [0,0,0,0,0,0,0,0];
 
 for ($i = 1 ; $i<50 ; $i++) {
 $arr49[] = $i;
@@ -67,11 +65,6 @@ for ($i=0 ; $i<7; $i++){
            break;
            case 6;
                 $Tmatch['m6'] = $Tmatch['m6'] +1;
-
-           break;
-           case 7;
-
-//           echo '7匹配的有'.$Tmatch['m7'];
    }
 
    switch ($match1) {
